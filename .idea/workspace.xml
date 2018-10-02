@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dc5865ea-22ef-4031-83b7-97de4ad647a1" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/oop/time.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oop/account.py" beforeDir="false" afterPath="$PROJECT_DIR$/oop/account.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oop/course.py" beforeDir="false" afterPath="$PROJECT_DIR$/oop/course.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oop/time.py" beforeDir="false" afterPath="$PROJECT_DIR$/oop/time.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -50,24 +52,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="course.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="course.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/oop/course.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="198">
-              <caret line="9" column="28" lean-forward="true" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="28" />
+              <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="time.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="time.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/oop/time.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="484">
-              <caret line="52" column="12" lean-forward="true" selection-start-line="52" selection-start-column="12" selection-end-line="52" selection-end-column="12" />
-              <folding>
-                <element signature="e#249#366#0" />
-                <element signature="e#400#622#0" />
-              </folding>
+            <state relative-caret-position="-616">
+              <caret line="20" column="29" lean-forward="true" selection-start-line="20" selection-start-column="29" selection-end-line="20" selection-end-column="29" />
             </state>
           </provider>
         </entry>
@@ -75,8 +73,8 @@
       <file leaf-file-name="account.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/oop/account.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="550">
-              <caret line="28" selection-start-line="28" selection-end-line="28" />
+            <state relative-caret-position="264">
+              <caret line="15" column="13" lean-forward="true" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
               <folding>
                 <element signature="e#72#148#0" />
               </folding>
@@ -127,8 +125,8 @@
         <option value="$PROJECT_DIR$/usefunmodule.py" />
         <option value="$PROJECT_DIR$/use_collections2.py" />
         <option value="$PROJECT_DIR$/oop/account.py" />
-        <option value="$PROJECT_DIR$/oop/course.py" />
         <option value="$PROJECT_DIR$/oop/time.py" />
+        <option value="$PROJECT_DIR$/oop/course.py" />
       </list>
     </option>
   </component>
@@ -188,7 +186,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.time">
+  <component name="RunManager" selected="Python.course">
     <configuration name="account" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="demo" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -288,8 +286,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.time" />
         <item itemvalue="Python.course" />
+        <item itemvalue="Python.time" />
         <item itemvalue="Python.account" />
         <item itemvalue="Python.use_collections2" />
         <item itemvalue="Python.usefunmodule" />
@@ -313,12 +311,12 @@
     <frame x="-8" y="-8" width="1296" height="776" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14921875" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1609375" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Python Console" order="7" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.4527736" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.31034482" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Favorites" order="2" side_tool="true" />
@@ -666,31 +664,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/oop/course.py">
+    <entry file="file://$PROJECT_DIR$/oop/time.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="9" column="28" lean-forward="true" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="28" />
+        <state relative-caret-position="-616">
+          <caret line="20" column="29" lean-forward="true" selection-start-line="20" selection-start-column="29" selection-end-line="20" selection-end-column="29" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/oop/account.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="550">
-          <caret line="28" selection-start-line="28" selection-end-line="28" />
+        <state relative-caret-position="264">
+          <caret line="15" column="13" lean-forward="true" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
           <folding>
             <element signature="e#72#148#0" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/oop/time.py">
+    <entry file="file://$PROJECT_DIR$/oop/course.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="484">
-          <caret line="52" column="12" lean-forward="true" selection-start-line="52" selection-start-column="12" selection-end-line="52" selection-end-column="12" />
-          <folding>
-            <element signature="e#249#366#0" />
-            <element signature="e#400#622#0" />
-          </folding>
+        <state relative-caret-position="198">
+          <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
         </state>
       </provider>
     </entry>

@@ -4,6 +4,9 @@ class Account:
         self.ahname = ahname
         self.balance = balance
 
+    def __eq__(self, other):
+        return self.acno == other.acno
+
     def deposit(self, amount):
         self.balance += amount
 

@@ -19,7 +19,15 @@ class Time:
         return self.total_seconds() > other.total_seconds()
 
     def __add__(self, other):
-        pass
+        t = Time(self.hours + other.hours, self.mins + other.mins, self.secs + other.secs)
+        if t.is_valid():
+            return t
+        else:
+            raise ValueError("Invalid Time")
+
+    # Converts Time to int
+    def __int__(self):
+        return  self.total_seconds()
 
     def print(self):
         print("%02d:%02d:%02d" % (self.hours, self.mins, self.secs))
@@ -31,16 +39,23 @@ class Time:
             self.hours = hours
 
     def is_valid(self):
-        if self.hours >= 0 and self.hours <= 23 \
-                and self.mins >= 0 and self.mins <= 59 \
-                and self.secs >= 0 and self.secs <= 59:
+        if (self.hours >= 0 and self.hours <= 23
+                and self.mins >= 0 and self.mins <= 59
+                and self.secs >= 0 and self.secs <= 59):
             return True
         else:
             return False
 
 
 t1 = Time(10, 20, 30)
-t2 = Time(10, 20, 30)
+v = int(t1)     # __int__(t1)
+print(v)
+t2 = Time(10, 20, 25)
+nt = t1 + t2    #  __add__(t1,t2)
+nt = t1 + 100
+print(nt)
+
+
 t3 = Time(1, 2, 3)
 print(t1 == t2)
 print(t1 > t3)  # __gt__(t1,t3)
