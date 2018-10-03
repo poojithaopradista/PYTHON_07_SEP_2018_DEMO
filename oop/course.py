@@ -8,6 +8,9 @@ class Course:
         self.__duration = duration
         self.__fee = fee
 
+    def __str__(self):
+        return  self.__title
+
     # Methods
     def print_details(self):
         print("Title    : ", self.__title)
@@ -30,15 +33,26 @@ class Course:
         self.__fee = value
 
 
+# Subclass
+class OnlineCourse(Course):
+    def __init__(self, title, duration, fee, url):
+        super().__init__(title, duration, fee)
+        self.__url = url
+
+    # Overriding -
+    def print_details(self):
+        # super().print_details()
+        Course.print_details(self)
+        print("URL      : ", self.__url)
+
+
 if __name__ == "__main__":
     # using Course class
     c1 = Course("Python", 40, 4000)  # create object of Course type
     c1.fee = 1000
-    c1.print_details()  # call method
-    print(c1.course_fee)
-    Course.set_tax(15)
-    print(c1.course_fee)
+    print(c1.__str__())
+    # c1.print_details()  # call method
 
-    c2 = Course("Angular", 15, 2000)
-    c2.print_details()
-    print(c1)
+    oc1 = OnlineCourse("Angular", 20, 3000, "http://www.xyz.com/abc")
+    oc1.print_details()
+    # print(OnlineCourse.__bases__)
