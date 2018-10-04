@@ -6,7 +6,7 @@ class A:
         print("add() of A")
 
 
-class B:
+class B(A):
     def print(self):
         print("print() of B")
 
@@ -14,13 +14,22 @@ class B:
         print("sub() of B")
 
 
-class C(A, B):
+class C(B,A):
     def print(self):
-        super().print()
         print("print() of C")
 
 
+def fun(v):
+    pass
+
+
+fun(10)
+fun("Abc")
+
+
 obj = C()
-obj.print()
-obj.add()
-obj.sub()
+
+print( issubclass(C,B))
+print( issubclass(A,B))
+print( isinstance(obj,A))
+
