@@ -1,3 +1,7 @@
+class InsufficientBalanceError(Exception):
+    def __init__(self,message="Insufficient Balance"):
+        self.message = message
+
 class Account:
     def __init__(self, acno, ahname, balance=0):
         self.acno = acno
@@ -14,7 +18,7 @@ class Account:
         if self.balance >= amount:
             self.balance -= amount
         else:
-            print("Insufficient balance!")
+            raise InsufficientBalanceError("Insufficient Balance. Balance is " + str(self.balance))
 
     def get_balance(self):
         return self.balance
@@ -25,7 +29,11 @@ class Account:
         print("Current Balance         : ",self.balance)
 
 
-a1 = Account(1, "Mr. Steve")
-a1.print_details()
-a2  = Account()
+a1 = Account(1, "Mr. Steve",10000)
+try:
+    a1.withdraw(20000)
+    print("Use that amount")
+except Exception as ex:
+    print("Error : ", ex.message)
+
 
