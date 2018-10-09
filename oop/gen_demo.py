@@ -2,6 +2,7 @@ def even_numbers():
     for n in range(2, 11, 2):
         yield n
 
+
 g = even_numbers()
 print(type(g))
 
